@@ -1,0 +1,32 @@
+
+from tkinter import*
+top=Tk()
+top.geometry("1400x800")
+top.title('CLASS')
+top.config(bg="grey")
+welcome=Label(top,text="welcome to our page",font=('TimesNewRoman',29,'italic'),bg="grey",fg="pink")
+welcome.place(x=600,y=75)
+def login():
+    kit=Frame(top,bg="skyblue",height=700,width=300)
+    kit.pack(fill=X)
+    label1=Label(kit,text="Login Page",font=('TimesNewRoman',40,'italic'),bg="skyblue",fg="purple")
+    label1.place(x=500,y=100)
+    label1=Label(kit,text="Username",font=('TimesNewRoman',40,'italic'),bg="skyblue",fg="purple")
+    label1.place(x=400,y=300)
+    label1=Label(kit,text="Password",font=('TimesNewRoman',40,'italic'),bg="skyblue",fg="purple")
+    label1.place(x=400,y=400)
+    label1=Label(kit,text="Dont have an account?",font=('TimesNewRoman',30,'italic'),bg="skyblue",fg="purple")
+    label1.place(x=400,y=600)
+    label1=Label(kit,text="Login",font=('TimesNewRoman',20,'italic'),bg="pink",fg="purple")
+    label1.place(x=500,y=500)
+    label1=Label(kit,text="sign in",font=('TimesNewRoman',20,'italic'),bg="pink",fg="purple")
+    label1.place(x=850,y=600)
+    
+    box =Entry(kit,text="",font=('TimesNewRoman',29,'italic'),bg="pink",fg="blue")
+    box.place(x=700,y=300,width=200,height=50)
+    box =Entry(kit,text="",font=('TimesNewRoman',29,'italic'),bg="pink",fg="blue")
+    box.place(x=700,y=400,width=200,height=50)
+
+button=Button(top,text="get started",font=('TimesNewRoman',29,'italic'),bg="white",fg="pink",activebackground="skyblue",activeforeground="black",command=login)
+button.place(x=700,y=400,height=100,width=200)
+top.mainloop()
